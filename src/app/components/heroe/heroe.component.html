@@ -1,3 +1,16 @@
-<p>
-  heroe works!
-</p>
+<h1><small>{{heroe.nombre}}</small></h1>
+<hr>
+<div class="card-columns">
+  <div class="card animated fadeIn fast">
+    <img class="card-img-top img-fluid" src="{{heroe.img}}" alt="{{heroe.nombre}}">
+    <div class="card-block">
+      <h4 class="card-title">{{heroe.nombre}}</h4>
+      <p class="card-text">{{heroe.bio}}</p>
+      <p class="card-text">
+        <small class="text-muted">{{heroe.aparicion}}</small>
+      </p>
+    </div>
+    <button class="btn btn-outline-primary btn-block" type="button" [routerLink]="['/heroes']"> Volver... </button>
+  </div>
+
+</div>
